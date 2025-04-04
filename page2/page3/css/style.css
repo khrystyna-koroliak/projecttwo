@@ -1,12 +1,15 @@
 /* ----- fonts ----- */
 
+
 /*fancy*/@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&family=Metamorphous&family=Monsieur+La+Doulaise&display=swap');
 /*sophisticated*/@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
 /*loud*/@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 /*buisness*/@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
 /*playful*/@import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
 
+
 /* ----- basic setting ----- */
+
 
 * { 
     margin: 0;
@@ -18,41 +21,12 @@ html {
     height: 100%;
 }
 
+
 /* ----- prep ----- */
+
 
 body { 
     background-color: #0abab5; 
+    font-size: 50px;
 }
 
-/* Note:
-"#" is and id selector (targets one specific element); 
-"." is a class selector (targets multiple elements) */
-#container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-    font-family: 'Monsieur La Doulaise', cursive;
-    font-size: 100px;
-}
-
-/* ----- animations ------ */
-
-#Imagine {
-opacity: 0;
-animation: fadeIn 4s forwards;
-}
-
-#Imagine: hover {
-    cursor: pointer;
-}
-
-@keyframes fadeIn {
-/* starting opacity*/ 0% { opacity: 0; }
-/*final opacity*/ 100% { opacity: 1; }
-}

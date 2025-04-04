@@ -1,0 +1,236 @@
+/* ----- fonts ----- */
+
+
+/*fancy*/@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&family=Metamorphous&family=Monsieur+La+Doulaise&display=swap');
+/*sophisticated*/@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+/*loud*/@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+/*buisness*/@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+/*playful*/@import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
+
+
+/* ----- basic setting ----- */
+
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+
+/* ----- prep ----- */
+
+
+body { 
+    background-color: #0abab5; 
+    overflow-x: hidden;
+    font-size: 50px;
+}
+
+#container {
+    display: flex;
+    margin-left: 5%;
+
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: max-content;
+    overflow-x: auto;
+    white-space: nowrap;
+
+    align-items: center;
+    height: 100vh;
+
+    animation: scrollLeft 10s linear infinite;
+}   
+
+#container section {
+    display: inline-block;
+    margin-right: 30px;
+    margin-left: 30px;
+    padding: 20px;
+}
+
+#DayAndNight {
+    text-align: center;
+    display: inline-block;
+}
+
+#DayAndNight span {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+
+    position: relative;
+    top: 0px;
+
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+
+    animation-delay: 1s;
+}
+
+a {
+    font-size: 150px;
+    color: white;
+    font-family: 'Bodoni';
+    text-decoration: none;
+}
+
+/* ----- animations ------ */
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#MeAndYou {
+    font-size: 60px;
+    color: black;
+    font-family: 'MonteCarlo';
+
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+#IDo {
+    font-size: 60px;
+    color: black;
+    font-family: 'Bodoni Moda SC', serif;
+
+    position: relative;
+    top: 50px;
+
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+
+    animation-delay: 1s;
+}
+
+#IThinkAbout {
+    font-size: 60px;
+    color: black;
+    font-family: 'barrio';
+
+    position: relative;
+    top: 100px;
+
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+
+    animation-delay: 2s;
+}
+
+#You {
+    font-size: 100px;
+    color: #afefed;
+    font-family: 'Abril Fatface', serif;
+
+    position: relative;
+    top: -20px;
+
+    transform: translateY(-70px); 
+    animation: fadeInSlideIn 10s ease-out forwards;
+
+    animation-delay: 1s;
+}
+
+@keyframes fadeInSlideIn {
+    0% { opacity: 0; transform: translateY(-50px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+
+#Day {
+    font-size: 100px;
+    color: rgb(245, 245, 230);
+    font-family: 'Bodoni';
+
+    position: relative;
+    top: 50px;
+
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+
+    animation-delay: 3.5s;
+}
+
+#And {
+    font-size: 60px;
+    color: black;
+    font-family: 'MonteCarlo';
+
+    position: relative;
+    top: 50px;
+
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+
+    animation-delay: 4s;
+}
+
+#Night {
+    font-size: 100px;
+    color: rgb(15, 15, 122);
+    font-family: 'Bodoni';
+
+    position: relative;
+    top: 50px;
+
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+
+    animation-delay: 4.5s;
+}
+
+#ItIsOnlyRight {
+    font-size: 60px;
+    color: black;
+    font-family: 'Barrio';
+
+    position: relative;
+    top: -50px;
+
+    opacity: 0;
+    animation: fadeInFromLeft 2s ease-out forwards;
+
+    animation-delay: 4s;
+}
+
+@keyframes fadeInFromLeft {
+    0% { opacity: 0; transform: translateX(-50px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+
+#ToThink {
+    font-size: 60px;
+    color: black;
+    font-family: 'Montecarlo';
+
+    position: relative;
+    top: 100px;
+
+    opacity: 0;
+    animation: fadeIn 7s forwards;
+
+    animation-delay: 5s;
+}
+
+#Love {
+
+    position: relative;
+    top: 100px;
+
+    transform: translateY(-70px); 
+    animation: fadeIn 10s ease-out forwards;
+
+    animation-delay: 7s;
+}
+
+#Love:hover {
+    cursor: pointer;
+}
